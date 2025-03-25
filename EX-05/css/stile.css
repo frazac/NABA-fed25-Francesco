@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+    height: 3000px;
+}
+body > * {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.wrapper {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    column-gap: 20px;
+}
+.wrapper aside {
+    border: 1px solid green;
+}
+.wrapper main {
+    border: 1px solid purple;
+}
+.float-dem {
+    border: 1px solid blue
+}
+.float-dem .child {
+    float:right;
+    width: 150px;
+    height: 50px;
+    border: 1px solid blueviolet;
+}
+.position-dem {
+    border: 1px solid brown;
+    position: relative;
+    margin-top: 60px;
+}
+.position-dem .child {
+    width: 150px;
+    height: 50px;
+    border: 1px solid brown;
+}
+.position-dem .child.positionAbsolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.position-dem .child.positionRelative {
+    position: relative;
+    left: 10px;
+}
+.position-dem .child.positionFixed {
+    position: fixed;
+    bottom: 0;
+}
